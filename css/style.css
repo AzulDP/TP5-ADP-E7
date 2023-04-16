@@ -2,9 +2,14 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 
 body{
+    min-height:100vh;
     display: flex;
     flex-direction: column;
+font-family: fira sans, sans-serif;
 }
 main{
     flex-grow: 1;
+}
+p{
+    font-family: rajdhani, sans-serif;
 }
