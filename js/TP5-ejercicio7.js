@@ -19,12 +19,12 @@ function obtenerDato(e){
 
 function tirada(){
     for(tirada=0; tirada<6; tirada++){
-        let userMove = obtenerDato(input.value);
+        // let userMove = obtenerDato(input.value);
         
-// let userMove = parseInt(prompt("Seleccione un valor del cero al 2 donde:  Piedra -> 0; Papel -> 1; Tijera  -> 2"));
-// console.log(userMove);
+let userMove = parseInt(prompt("Seleccione un valor del cero al 2 donde:  Piedra -> 0; Papel -> 1; Tijera  -> 2"));
+console.log(`user move is ${userMove}`);
 let computerMove = Math.floor(Math.random()*3)+1;
-console.log(computerMove);
+console.log(`computer move is ${computerMove}`);
 
 // if (userMove === 0 || userMove === 1 || userMove === 2){
 //     document.write(`${userMove}`);
