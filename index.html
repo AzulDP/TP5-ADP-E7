@@ -34,18 +34,29 @@
         </nav>
     </header>
     <main class="container-fluid">
-        <section id="userMove" class="dflex flex-wrap">
-            <article class="bg-primary text-center text-white py-4 col-12 col-md-12 col-lg-12">
-                <h1 class="py-3">User Move</h1>
+        <section class="row container my-2">
+            <article class="bg-primary text-center text-white py-4 col-6">
+                <h2 class="py-3">User Move</h2>
+                <p class="text-center">Seleccione un valor del cero al 2 donde: <br>
+                    👊🏻 Piedra = 0 <br> ✋🏻 Papel =  1 <br> ✌🏻 Tijera = 2</p>
+                <form class="d-flex my-4 container justify-content-center" role="button">
+                    <input 
+                    type="number"
+                    class="form-control me-2"
+                    placeholder="Ingrese un numero"
+                    aria-label="input"
+                    required>
+                    <button type="submit" class="btn btn-dark" onclick="tirada();">Enviar</button>
+                </form>
                 <p class="py-3">display move</p>
         </article>
-        <article id="compMove" class="bg-primary text-center text-white py-4 col-12 col-md-12 col-lg-12">
-            <h1 class="py-3">Computer Move</h1>
+        <article class="bg-primary text-center text-white py-4 col-6">
+            <h2 class="py-3">Computer Move</h2>
             <p class="py-3">display move</p>
         </article>
     </section>
-    <section class="bg-dark text-center text-white py-4">
-        <h1 class="py-3">Resultado</h1>
+    <section class="bg-dark text-center text-white py-4 my-2">
+        <h2 class="py-3">Resultado</h2>
         <p class="py-3"> display result</p>
         </section>
     </main>

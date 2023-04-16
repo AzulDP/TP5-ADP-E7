@@ -13,3 +13,6 @@ main{
 p{
     font-family: rajdhani, sans-serif;
 }
+input{
+    max-width: fit-content;
+}
