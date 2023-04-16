@@ -11,22 +11,26 @@ formulario.addEventListener("submit", obtenerDato);
 function obtenerDato(e){
     e.preventDefault();
     console.log("Ejecutando el evento submit del formulario");
-tirada();
+    let input = [document.querySelector("input")];
+    console.log(typeof input);
+    console.log(input.value);
+    tirada();
 }
 
 function tirada(){
     for(tirada=0; tirada<6; tirada++){
+        let userMove = obtenerDato(input.value);
         
-let userMove = parseInt(prompt("Seleccione un valor del cero al 2 donde:  Piedra -> 0; Papel -> 1; Tijera  -> 2"));
-console.log(userMove);
+// let userMove = parseInt(prompt("Seleccione un valor del cero al 2 donde:  Piedra -> 0; Papel -> 1; Tijera  -> 2"));
+// console.log(userMove);
 let computerMove = Math.floor(Math.random()*3)+1;
 console.log(computerMove);
 
-if (userMove === 0 || userMove === 1 || userMove === 2){
-    document.write(`${userMove}`);
-} else if (userMove > 2 || userMove == NaN || userMove == ""){
-    alert("El valor ingresado no es válido. Ingrese un número del 0 al 2, por favor.")
-} 
+// if (userMove === 0 || userMove === 1 || userMove === 2){
+//     document.write(`${userMove}`);
+// } else if (userMove > 2 || userMove == NaN || userMove == ""){
+//     alert("El valor ingresado no es válido. Ingrese un número del 0 al 2, por favor.")
+// } 
 
 
 if (userMove === 0 && computerMove === 0 ||

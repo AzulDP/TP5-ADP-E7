@@ -34,7 +34,7 @@
         </nav>
     </header>
     <main class="container-fluid">
-        <section class="row container my-2">
+        <section class="row container-fluid">
             <article class="bg-primary text-center text-white py-4 col-6">
                 <h2 class="py-3">User Move</h2>
                 <p class="text-center">Seleccione un valor del cero al 2 donde: <br>
@@ -45,6 +45,8 @@
                     class="form-control me-2"
                     placeholder="Ingrese un numero"
                     aria-label="input"
+                    max-length="1"
+                    name="UserMove"
                     required>
                     <button type="submit" class="btn btn-dark" onclick="tirada();">Enviar</button>
                 </form>
@@ -55,7 +57,7 @@
             <p class="py-3">display move</p>
         </article>
     </section>
-    <section class="bg-dark text-center text-white py-4 my-2">
+    <section class=" bg-dark text-center text-white py-4 my-2">
         <h2 class="py-3">Resultado</h2>
         <p class="py-3"> display result</p>
         </section>
