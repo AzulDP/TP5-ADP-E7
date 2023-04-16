@@ -10,8 +10,10 @@ font-family: fira sans, sans-serif;
 main{
     flex-grow: 1;
 }
-p{
+.displayBox{
     font-family: rajdhani, sans-serif;
+background-color: black;
+border-radius: 15px;
 }
 input{
     max-width: fit-content;
