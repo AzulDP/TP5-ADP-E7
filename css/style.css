@@ -13,6 +13,11 @@ main{
 p{
     font-family: rajdhani, sans-serif;
 }
+.displayBox{
+    font-family: rajdhani, sans-serif;
+background-color: black;
+border-radius: 15px;
+}
 input{
     max-width: fit-content;
 }
