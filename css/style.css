@@ -15,6 +15,11 @@ main{
 background-color: black;
 border-radius: 15px;
 }
+.displayBox{
+    font-family: rajdhani, sans-serif;
+background-color: black;
+border-radius: 15px;
+}
 input{
     max-width: fit-content;
 }

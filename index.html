@@ -34,7 +34,7 @@
         </nav>
     </header>
     <main class="container-fluid">
-        <section class="row container my-2">
+        <section class="row container-fluid">
             <article class="bg-primary text-center text-white py-4 col-6">
                 <h2 class="py-3 ">User Move</h2>
                 <p class="text-center">Seleccione un valor del cero al 2 donde: <br>
@@ -45,28 +45,28 @@
                     class="form-control me-2"
                     placeholder="Ingrese un numero"
                     aria-label="input"
+                    max-length="1"
+                    id="userMove"
                     required>
                     <button type="submit" class="btn btn-dark" onclick="tirada();">Enviar</button>
                 </form>
-                <p class="py-3 displayBox">display move</p>
+                <p class="py-3 displayBox" id="displayUserMove">display move</p>
         </article>
         <article class="bg-primary text-center text-white py-4 col-6">
-            <h2 class="py-3">Computer Move</h2>
-            <p></p>
-            <br>
-            <p></p>
-            <br>
-            <p></p>
-            <br>
-            <p></p>
+            <h2 class="py-3 mt-3">Computer Move</h2>
             <br>
             <br>
-            <p class="py-3 mt-2 displayBox">display move</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class="py-3 displayBox" id="displayComputerMove">display move</p>
         </article>
     </section>
-    <section class="bg-dark text-center text-white py-4 my-2">
+    <section class=" bg-dark text-center text-white py-4 my-2">
         <h2 class="py-3">Resultado</h2>
-        <p class="py-3"> display result</p>
+        <p class="py-3" id="displayResult"> display result</p>
         </section>
     </main>
     <footer class="bg-dark text-secondary text-center py-1">
